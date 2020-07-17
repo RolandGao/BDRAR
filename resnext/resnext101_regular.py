@@ -1,14 +1,14 @@
 import torch
 from torch import nn
 
-import resnext_101_32x4d_
-from config import resnext_101_32_path
+from .resnext_101_32x4d_ import resnext_101_32x4d
+from .config import resnext_101_32_path
 
 
 class ResNeXt101(nn.Module):
     def __init__(self):
         super(ResNeXt101, self).__init__()
-        net = resnext_101_32x4d_.resnext_101_32x4d
+        net = resnext_101_32x4d
         net.load_state_dict(torch.load(resnext_101_32_path))
 
         net = list(net.children())
