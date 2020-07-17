@@ -34,16 +34,16 @@ def main():
     net = BDRAR().cuda()
 
     if len(args['snapshot']) > 0:
-        print 'load snapshot \'%s\' for testing' % args['snapshot']
-        net.load_state_dict(torch.load(os.path.join(ckpt_path, exp_name, args['snapshot'] + '.pth')))
+        print('load snapshot \'%s\' for testing' % args['snapshot'])
+        net.load_state_dict(torch.load(os.path.join(ckpt_path, exp_name, args['snapshot'] + '.pth'),map_location='cpu'))
 
     net.eval()
     with torch.no_grad():
-        for name, root in to_test.iteritems():
+        for name, root in to_test.items():
             img_list = [img_name for img_name in os.listdir(os.path.join(root, 'ShadowImages')) if
                         img_name.endswith('.jpg')]
             for idx, img_name in enumerate(img_list):
-                print 'predicting for %s: %d / %d' % (name, idx + 1, len(img_list))
+                print('predicting for %s: %d / %d' % (name, idx + 1, len(img_list)))
                 check_mkdir(
                     os.path.join(ckpt_path, exp_name, '(%s) %s_prediction_%s' % (exp_name, name, args['snapshot'])))
                 img = Image.open(os.path.join(root, 'ShadowImages', img_name))
