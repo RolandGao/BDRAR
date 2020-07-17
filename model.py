@@ -30,7 +30,7 @@ class _AttentionModule(nn.Module):
     def forward(self, x):
         block1 = F.relu(self.block1(x) + x, True)
         block2 = F.relu(self.block2(block1) + block1, True)
-        block3 = F.sigmoid(self.block3(block2) + self.down(block2))
+        block3 = torch.sigmoid(self.block3(block2) + self.down(block2))
         return block3
 
 
@@ -168,7 +168,7 @@ class BDRAR(nn.Module):
         predict3_lh = self.predict(refine3_lh_1)
         predict4_lh = self.predict(refine4_lh_1)
 
-        fuse_attention = F.sigmoid(self.fuse_attention(torch.cat((refine1_hl_1, refine4_lh_1), 1)))
+        fuse_attention = torch.sigmoid(self.fuse_attention(torch.cat((refine1_hl_1, refine4_lh_1), 1)))
         fuse_predict = torch.sum(fuse_attention * torch.cat((predict1_hl, predict4_lh), 1), 1, True)
 
         predict4_hl = F.upsample(predict4_hl, size=x.size()[2:], mode='bilinear')
@@ -183,4 +183,4 @@ class BDRAR(nn.Module):
 
         if self.training:
             return fuse_predict, predict1_hl, predict2_hl, predict3_hl, predict4_hl, predict1_lh, predict2_lh, predict3_lh, predict4_lh
-        return F.sigmoid(fuse_predict)
+        return torch.sigmoid(fuse_predict)
