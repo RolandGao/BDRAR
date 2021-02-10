@@ -1,3 +1,6 @@
+## I updated the code to work on the PyTorch 1.7
+
+
 # Bidirectional Feature Pyramid Network with Recurrent Attention Residual Modules for Shadow Detection
 
 by Lei Zhu^, Zijun Deng^, Xiaowei Hu, Chi-Wing Fu, Xuemiao Xu, Jing Qin, and Pheng-Ann Heng (^ joint 1st authors)
