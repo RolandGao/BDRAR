@@ -1,4 +1,4 @@
-## I updated the code to work on the PyTorch 1.7
+## I updated the code to work on the PyTorch 1.7. Below is the original README
 
 
 # Bidirectional Feature Pyramid Network with Recurrent Attention Residual Modules for Shadow Detection
