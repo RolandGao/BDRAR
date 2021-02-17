@@ -3,7 +3,7 @@
 BDRAR can detect shadows, while DHNet can remove (and detect) shadows. Here are two colabs chowcasing each work
 
 BDRAR:
-[[colab]](https://colab.research.google.com/drive/1wrIWT3gG7pAWwbBbdI2MBPvZvWoQPT4G#scrollTo=7zSUxMHio8By)
+[[colab]](https://colab.research.google.com/drive/1wrIWT3gG7pAWwbBbdI2MBPvZvWoQPT4G?usp=sharing)
 [[paper]](https://openaccess.thecvf.com/content_ECCV_2018/papers/Lei_Zhu_Bi-directional_Feature_Pyramid_ECCV_2018_paper.pdf)
 [[original github]](https://github.com/zijundeng/BDRAR)
 
