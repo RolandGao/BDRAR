@@ -1,6 +1,6 @@
 # Shadow Detection and Removal
 
-BDRAR can detect shadows, while DHNet can remove (and detect) shadows. Here are two colabs chowcasing each work
+BDRAR can detect shadows, while DHnet can remove (and detect) shadows. Here are two colabs chowcasing each work
 
 BDRAR:
 [[colab]](https://colab.research.google.com/drive/1wrIWT3gG7pAWwbBbdI2MBPvZvWoQPT4G?usp=sharing)
@@ -11,6 +11,11 @@ Dual Hierarchical Aggregation Network:
 [[colab]](https://colab.research.google.com/drive/1cJ_dsBUXFaFtjoZB9gDYeahjmysnvnTq#scrollTo=vKTxRib8UOSN)
 [[paper]](https://arxiv.org/abs/1911.08718)
 [[original github]](https://github.com/vinthony/ghost-free-shadow-removal)
+
+###My contributions
+I created the colab notebook and updated the source code to PyTorch 1.7 for BDRAR (originally in an older version of PyTorch).
+
+I reimplemented DHnet in PyTorch 1.7 (originally in tensorflow).
 
 ## Citations
 ```
