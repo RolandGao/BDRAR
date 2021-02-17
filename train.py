@@ -138,7 +138,7 @@ def train(net, optimizer):
                   (curr_iter, train_loss_record.avg, loss_fuse_record.avg, loss1_h2l_record.avg, loss2_h2l_record.avg,
                    loss3_h2l_record.avg, loss4_h2l_record.avg, loss1_l2h_record.avg, loss2_l2h_record.avg,
                    loss3_l2h_record.avg, loss4_l2h_record.avg, optimizer.param_groups[1]['lr'])
-            print log
+            print(log)
             open(log_path, 'a').write(log + '\n')
 
             if curr_iter > args['iter_num']:

@@ -1,21 +1,38 @@
-## I updated the code to work on the PyTorch 1.7. Below is the original README
+# Shadow Detection and Removal
 
+BDRAR can detect shadows, while DHNet can remove (and detect) shadows. Here are two colabs chowcasing each work
 
-# Bidirectional Feature Pyramid Network with Recurrent Attention Residual Modules for Shadow Detection
+BDRAR:
+[[colab]](https://colab.research.google.com/drive/1wrIWT3gG7pAWwbBbdI2MBPvZvWoQPT4G#scrollTo=7zSUxMHio8By)
+[[paper]](https://openaccess.thecvf.com/content_ECCV_2018/papers/Lei_Zhu_Bi-directional_Feature_Pyramid_ECCV_2018_paper.pdf)
+[[original github]](https://github.com/zijundeng/BDRAR)
 
-by Lei Zhu^, Zijun Deng^, Xiaowei Hu, Chi-Wing Fu, Xuemiao Xu, Jing Qin, and Pheng-Ann Heng (^ joint 1st authors)
+Dual Hierarchical Aggregation Network:
+[[DHNet colab]](https://colab.research.google.com/drive/1cJ_dsBUXFaFtjoZB9gDYeahjmysnvnTq#scrollTo=vKTxRib8UOSN)
+[[paper]](https://arxiv.org/abs/1911.08718)
+[[original github]](https://github.com/vinthony/ghost-free-shadow-removal)
 
-This implementation is written by Zijun Deng at the South China University of Technology.
-
-***
-
-## Citation
+## Citations
+```
 @inproceedings{zhu18b,   
-&nbsp;&nbsp;&nbsp;&nbsp;  author = {Zhu, Lei and Deng, Zijun and Hu, Xiaowei and Fu, Chi-Wing and Xu, Xuemiao and Qin, Jing and Heng, Pheng-Ann},    
-&nbsp;&nbsp;&nbsp;&nbsp;  title = {Bidirectional Feature Pyramid Network with Recurrent Attention Residual Modules for Shadow Detection},    
-&nbsp;&nbsp;&nbsp;&nbsp;  booktitle = {ECCV},    
-&nbsp;&nbsp;&nbsp;&nbsp;  year  = {2018}    
+    author = {Zhu, Lei and Deng, Zijun and Hu, Xiaowei and Fu, Chi-Wing and Xu, Xuemiao and Qin, Jing and Heng, Pheng-Ann},    
+    title = {Bidirectional Feature Pyramid Network with Recurrent Attention Residual Modules for Shadow Detection},    
+    booktitle = {ECCV},    
+    year  = {2018}    
 }
+```
+```
+@misc{cun2019ghostfree,
+    title={Towards Ghost-free Shadow Removal via Dual Hierarchical Aggregation Network and Shadow Matting GAN},
+    author={Xiaodong Cun and Chi-Man Pun and Cheng Shi},
+    year={2019},
+    eprint={1911.08718},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
+
+# Original BDRAR Readme
 
 ## Shadow Maps
 The results of shadow detection on SBU and UCF can be found at [Google Drive](https://drive.google.com/open?id=1Fhg5iuB2MSBtzklliXU65EwNbakfCkC1).
