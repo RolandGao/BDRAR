@@ -8,7 +8,7 @@ BDRAR:
 [[original github]](https://github.com/zijundeng/BDRAR)
 
 Dual Hierarchical Aggregation Network:
-[[DHNet colab]](https://colab.research.google.com/drive/1cJ_dsBUXFaFtjoZB9gDYeahjmysnvnTq#scrollTo=vKTxRib8UOSN)
+[[colab]](https://colab.research.google.com/drive/1cJ_dsBUXFaFtjoZB9gDYeahjmysnvnTq#scrollTo=vKTxRib8UOSN)
 [[paper]](https://arxiv.org/abs/1911.08718)
 [[original github]](https://github.com/vinthony/ghost-free-shadow-removal)
 
